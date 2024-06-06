@@ -204,18 +204,164 @@
 
 // export default App
 
+// import React from 'react'
+// import Test from './components/exercises/exercise1/Test'
+// import Test1 from './components/exercises/exercise1/Test1'
+
+// const App = () => {
+//   return (
+//     <div>
+//       {/* <Test></Test> */}
+//       <Test1></Test1>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+//************************************************************************ */
+// Routers
+
+// import React from 'react'
+// import Navpage from './components/Router/Navpage'
+// import { BrowserRouter, Route, Routes } from 'react-router-dom'
+// import Productspage from './components/Router/Productspage'
+// import Cartpage from './components/Router/Cartpage'
+// import Mainpage from './components/Router/Mainpage'
+
+// const App = () => {
+//   return (
+//     <BrowserRouter>
+//     <Navpage></Navpage>
+
+//     <Routes>
+
+//   <Route path='/' element={<Mainpage></Mainpage>}></Route>
+//    <Route path='/Products' element={<Productspage></Productspage>}></Route>
+//    <Route path='/Cart' element={<Cartpage></Cartpage>}></Route>
+
+
+//     </Routes>
+    
+//     </BrowserRouter>
+//   )
+// }
+
+// export default App
+
+// import React, { Component } from 'react'
+// import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+// import Navclasspage from './components/Router/Navclasspage'
+// import Homeclasspage from './components/Router/Homeclasspage'
+// import Productsclasspage from './components/Router/Productsclasspage'
+// import Cartclasspage from './components/Router/Cartclasspage'
+
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <BrowserRouter>
+// <Navclasspage></Navclasspage>
+
+// <Routes>
+
+// <Route path='/' element={<Homeclasspage></Homeclasspage>}></Route>
+// <Route path='/products'  element={<Productsclasspage></Productsclasspage>}></Route>
+// <Route path='/cart' element={<Cartclasspage></Cartclasspage>}></Route>
+
+// </Routes>
+
+//       </BrowserRouter>
+//     )
+//   }
+// }
+
+//*****************Life-cycle************
+// import React, { Component } from 'react'
+// import Lifecycle from './components/Lifecycle/Lifecycle'
+
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <Lifecycle></Lifecycle>
+//       </div>
+//     )
+//   }
+// }
+
+// import React, { useState } from 'react'
+// import Effecthook from './components/hooks/Effecthook'
+
+// const App = () => {
+
+ 
+//   return (
+//     <div>
+//       <Effecthook></Effecthook>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// import React, {  useState } from 'react'
+// import axiosInstance from './utils/axiosInstance'
+
+// const App = () => {
+ 
+//   let [data,setData]= useState([])
+//   // let inputdata= useRef()
+
+//   let change=(e)=> {
+//        setData(e.target.value)
+//        e.preventDefault()
+//   }
+
+//   let handle=()=> {
+//     let payload={
+//       data
+//     }
+//     console.log(data);
+
+//     axiosInstance.post('/users',payload)
+  
+//   }
+
+
+
+//   return (
+//     <div>
+//       <form action="" onSubmit={handle}>
+//         <input type="text" name="" id=""  onChange={change} />
+//     <input type="submit" value="submit" />
+      
+//       </form>
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import Test from './components/exercises/exercise1/Test'
+import Get from './components/axios/Get'
 
 const App = () => {
   return (
     <div>
-      <Test></Test>
+      <Get></Get>
     </div>
   )
 }
 
 export default App
+
+
+
+
+
+
 
 
     

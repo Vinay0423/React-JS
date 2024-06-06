@@ -21,7 +21,6 @@ const Slider = () => {
      if(state+1 > images.length-1){
        setState(0)
       }
-      console.log(state);
       image=images[state]
    }
 
